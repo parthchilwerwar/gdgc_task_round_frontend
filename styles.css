@@ -492,9 +492,11 @@ h1 span{
 }
 
 .card.yellow h3{
-    font-size: 2rem;
+    font-size: 4rem;
     position: absolute;
-    margin-top: 12rem;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 11rem;
+    font-weight: 400;
     align-self: flex-start;
     margin-bottom: auto;
     color: black;
@@ -710,11 +712,10 @@ h1 span{
 
     
 
-    .background-image img {
-        margin-top: 1.5rem;
-        width: 120%; 
-        height: auto; 
-        overflow: hidden;
+    .hero-card .background-image{
+       margin-top: 21px;
+
+        
     }
 
     .card {
@@ -741,13 +742,14 @@ h1 span{
         padding: 0.8rem;
     }
 
+    .dots1 {
+        position: absolute;
+        display: flex;
+        right: 2rem;
+        z-index: 10;
+        justify-content: center;
+    }
 
 
 }
-
-
-
-
-
-
 
