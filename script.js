@@ -1,12 +1,4 @@
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 
 const playBtn = document.querySelector('.play-btn');
@@ -65,22 +57,6 @@ if (cards.length > 0) {
     });
 }
 
-
-
-const signUpBtn = document.querySelector('.sign-up');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > lastScroll && currentScroll > 100) {
-        document.querySelector('header').style.transform = 'translateY(-100%)';
-    } else {
-        document.querySelector('header').style.transform = 'translateY(0)';
-    }
-
-    lastScroll = currentScroll;
-});
 
 
 
